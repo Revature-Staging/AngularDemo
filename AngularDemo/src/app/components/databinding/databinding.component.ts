@@ -14,7 +14,7 @@ export class DatabindingComponent implements OnInit {
 
   interpolatedFromTheBack:string = "Now you see me!"
   
-  prop:boolean = true;
+  prop:boolean = false;
 
   secretMessage:string;
 
