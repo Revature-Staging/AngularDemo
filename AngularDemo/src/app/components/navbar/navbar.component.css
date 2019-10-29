@@ -1,0 +1,16 @@
+div {
+    background-color: darkkhaki;
+    height: 40px;
+}
+
+.bg-custom {
+    background-color: cornflowerblue;
+}
+
+nav{
+    margin-bottom: 1em;
+}
+
+a{
+    color: white;
+}

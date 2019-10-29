@@ -1,0 +1,35 @@
+<h1>Databinding In Angular</h1>
+<hr>
+<p>Databinding entails binding properties from our template to properties within our Angular components (i.e. classes). There are several ways to approach databinding in Angular. We can use one-way databinding or two-way databinding.</p>
+<h2>One-Way Databinding</h2>
+<div>One-Way Databinding entails binding from the back to the front OR from the front to the back. There are three ways of approaching one-way databinding:
+    
+        <p>String Interpolation</p>
+        <p>Property Binding</p>
+        <p>Event Binding</p>
+    
+</div>
+<hr>
+<h3>
+    String Interpolation
+</h3>
+<p>String interpolation is a one-way databinding technique that allows us to bind from the back to the front. Thus, if we have some property within our component's class, we can bind it to our template. For instance, {{interpolatedFromTheBack}} Note that the syntax for interpolating a value is doubly curly brackets with the name of the property you'd like to interpolate placed inside of those brackets.
+</p>
+<h3>
+    Property Binding
+</h3>
+<p [hidden]="prop">
+    Property binding is a one-way databinding technique which allows us to bind from the back to the front. This time, however, we bind our elements' properties (or attributes) to some property in our class. The syntax used for property binding is square brackets.
+</p>
+<h3>
+    Event Binding
+</h3>
+<p (click)="changeProp()">
+    Event binding is a one-way databinding technique which allows us to bind from the front to back. In other words, some event takes place on our view and in response some function is executed on the back. The syntax for using event binding is parentheses.
+</p>
+<h2>Two Way Databinding</h2>
+<p>Two Way Databinding entails binding from the front to the back and back to the front again. In order to use two-way databinding, we can use "ngModel". The syntax for using ngModel is a square bracket followed by parenetheses.</p>
+<div>
+<input [(ngModel)]="secretMessage" type="text"/>
+</div>
+<p>The secret message is: {{secretMessage}}</p>
